@@ -1,0 +1,14 @@
+#%%
+import pandas as pd
+import csv
+
+data = pd.read_csv('data_crop.csv')
+
+def CropData(data, index1, index2):
+    CroppedData = data[index1 : index2]
+    print(CroppedData)
+    return CroppedData
+    
+
+CropData(data, 0, 4)
+# %%
